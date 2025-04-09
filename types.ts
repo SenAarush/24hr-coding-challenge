@@ -5,3 +5,8 @@ export interface ApiResponse<T> {
   token?: string;
   error?: string;
 }
+
+export interface TokenPayload {
+  email: string;
+  role: 'admin' | 'user';
+}
